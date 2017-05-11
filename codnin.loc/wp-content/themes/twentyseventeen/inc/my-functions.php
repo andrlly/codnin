@@ -192,7 +192,7 @@ function rei_add_to_cart_button($content){
 add_filter('add_to_cart_redirect', 'redirect_to_checkout');
 function redirect_to_checkout()
 {
-    return WC()->cart->get_checkout_url();
+    return wc_get_checkout_url();   
 
 }
 
